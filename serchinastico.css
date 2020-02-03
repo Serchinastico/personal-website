@@ -1,5 +1,8 @@
-.description {
+body {
     font-family: 'Montserrat', 'sans-serif';
+}
+
+.description {
     align-self: center;
     font-size: larger;
 }
@@ -7,4 +10,13 @@
 .me {
     font-weight: 600;
     color: #FF1C67;
+}
+
+.all-content {
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: auto;
+    position: absolute;
+	width: fit-content;
 }
