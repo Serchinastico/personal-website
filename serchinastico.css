@@ -65,32 +65,20 @@ a {
 
   .picture-of-me {
     background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .who-am-i {
     left: 15%;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  p {
-    font-size: 1rem;
-  }
-
-  .picture-of-me {
-    background: none;
-  }
-
-  .bg_01 {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    right: 8px;
-    bottom: 8px;
-    background-color: #000;
-  }
-
-  .me {
-    font-size: 1rem;
+  .who-am-i {
+    position: relative;
+    margin: 0 auto;
+    top: unset;
+    left: unset;
+    transform: unset;
   }
 }
