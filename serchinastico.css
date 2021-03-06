@@ -63,11 +63,22 @@ a {
     font-size: 4vw;
   }
 
+  .me {
+    font-size: 5vw;
+  }
+
   .picture-of-me {
     background: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .bg_01 {
+    left: 12px;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
   }
 
   .who-am-i {
