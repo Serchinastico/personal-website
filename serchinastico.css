@@ -1,93 +1,96 @@
 body {
-    font-family: 'Montserrat', 'sans-serif';
-    margin: 0;
+  font-family: "Montserrat", "sans-serif";
+  margin: 0;
+  background-color: #fff;
 }
 
 p {
-    margin: 0;
-    padding: 0;
-    color: #4a4a4a;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 a {
-    color: #3273dc;
-    cursor: pointer;
-    text-decoration: none;
+  color: #fe297d;
+  cursor: pointer;
 }
 
-.deco_1 {
-    background-color: gold;
-    width: 100%;
-    height: 20px;
-    position: fixed;
-    top: calc(50% - 172px);
+.bg_01 {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  right: 32px;
+  bottom: 32px;
+  background-color: #000;
 }
 
-.me {
-    font-weight: 600;
-    color: #FF1C67;
-}
-
-.center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.content {
-    width: 550px;
-    height: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.picture-of-me {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  right: 32px;
+  bottom: 32px;
+  background: #000 url("me.png") no-repeat fixed right center;
+  background-size: contain;
 }
 
 .who-am-i {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  max-width: 80%;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.me {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  .picture-of-me {
+    background: none;
+  }
+
+  .who-am-i {
+    left: 15%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .deco_1 {
-        position: absolute;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    .center {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0%, 0%);
-    }
+  .picture-of-me {
+    background: none;
+  }
 
-    .content {
-        margin-top: 32px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  .bg_01 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background-color: #000;
+  }
 
-    .picture-of-me {
-        display: flex;
-        justify-content: center;
-    }
-
-    .who-am-i {
-        margin-top: 24px;
-        width: 280px;
-    }
-
-    .what-i-do {
-        margin-top: 16px;
-        margin-bottom: 32px;
-    }
+  .me {
+    font-size: 1rem;
+  }
 }
