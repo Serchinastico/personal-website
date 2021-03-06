@@ -60,7 +60,7 @@ a {
 
 @media only screen and (max-width: 1200px) {
   p {
-    font-size: 1.5rem;
+    font-size: 4vw;
   }
 
   .picture-of-me {
@@ -68,10 +68,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .who-am-i {
-    left: 15%;
   }
 
   .who-am-i {
